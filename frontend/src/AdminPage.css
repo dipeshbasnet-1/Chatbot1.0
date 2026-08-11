@@ -1,0 +1,111 @@
+.admin-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: 'Inter', sans-serif;
+    background:
+        radial-gradient(circle at 20% 15%, rgba(124, 140, 255, 0.16), transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(255, 180, 84, 0.10), transparent 40%),
+        #0F1226;
+    color: #EDEDF5;
+}
+
+.login-card {
+    background: #171B36;
+    border: 1px solid rgba(124, 140, 255, 0.14);
+    border-radius: 20px;
+    padding: 32px;
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
+    }
+
+.login-card h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin: 0 0 6px;
+}
+
+.login-card input {
+    background: #0F1226;
+    border: 1px solid rgba(124, 140, 255, 0.14);
+    border-radius: 12px;
+    padding: 12px 14px;
+    color: #EDEDF5;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-card input:focus { border-color: #7C8CFF; }
+
+.login-card button {
+    background: linear-gradient(135deg, #7C8CFF, #6169D8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-card button:disabled { opacity: 0.6; cursor: default; }
+
+.error-text {
+    color: #FF6B6B;
+    font-size: 13px;
+    margin: 0;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 640px;
+}
+
+.dashboard h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: #171B36;
+    border: 1px solid rgba(124, 140, 255, 0.14);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #A6B2FF;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #9096B8;
+}
+
+.back-link {
+    color: #9096B8;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.back-link:hover { color: #EDEDF5; }
