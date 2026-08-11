@@ -1,22 +1,16 @@
-# Chatbot
+# React + Vite
 
-A full-stack AI chatbot built with the MERN stack (MongoDB, Express, React, Node.js), powered by Groq's Llama 3.3 model for real-time AI responses.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- **Real AI conversations** — powered by Groq (Llama 3.3 70B), not keyword matching
-- **Conversation memory** — the bot remembers context within a conversation
-- **Chat history sidebar** — like ChatGPT/Claude, browse and revisit past conversations
-- **AI-generated chat titles** — each conversation gets a short, auto-generated title
-- **Delete conversations** — remove any past chat
-- **Admin dashboard** — password-protected page showing usage stats (total conversations, total messages, recent activity)
-- **Fully responsive** — works on mobile and desktop
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Tech Stack
+## React Compiler
 
-**Frontend:** React (Vite), react-router-dom
-**Backend:** Node.js, Express
-**Database:** MongoDB Atlas
-**AI:** Groq API (Llama 3.3 70B)
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Project Structure
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.

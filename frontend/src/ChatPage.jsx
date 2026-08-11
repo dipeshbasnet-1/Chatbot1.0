@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import './ChatPage.css';
 
-const API_BASE = 'http://localhost:5001/api/chat';
+const API_BASE = 'https://chatbot1-0-698h.onrender.com/api/chat';
 
 // Get an existing sessionId from localStorage, or create + save a new one.
 // This is what makes the current conversation survive a page refresh.

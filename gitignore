@@ -1,0 +1,4 @@
+node_modules/
+.env
+.DS_Store
+dist/git ls-files | grep node_modules | wc -l

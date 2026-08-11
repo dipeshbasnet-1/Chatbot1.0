@@ -3,89 +3,51 @@
 import { useState } from 'react';
 import './AdminPage.css';
 
-const API_BASE = 'http://localhost:5001/api/admin';
+const API_BASE = 'https://chatbot1-0-698h.onrender.com/api/admin';
 
 function AdminPage() {
-
     const [password, setPassword] = useState('');
-
     const [authed, setAuthed] = useState(false);
-
     const [error, setError] = useState('');
-
     const [stats, setStats] = useState(null);
-
     const [loading, setLoading] = useState(false);
 
-
     async function handleLogin(e) {
-
         e.preventDefault();
-
         setError('');
-
         setLoading(true);
 
-
         try {
-
             const res = await fetch(`${API_BASE}/login`, {
-
                 method: 'POST',
-
                 headers: { 'x-admin-password': password },
-
             });
-
-
 
             if (!res.ok) {
-
                 setError('Incorrect password.');
-
                 return;
-
             }
 
-
             setAuthed(true);
-
             fetchStats();
 
-
         } catch (err) {
-
             setError('Could not reach the server.');
-
         } finally {
-
             setLoading(false);
-
         }
-
     }
 
-
     async function fetchStats() {
-
         try {
-
             const res = await fetch(`${API_BASE}/stats`, {
-
                 headers: { 'x-admin-password': password },
-
             });
-
             const data = await res.json();
-
             setStats(data);
-
         } catch (err) {
-
             console.error('Could not load stats:', err);
-
         }
-
     }
 
 
